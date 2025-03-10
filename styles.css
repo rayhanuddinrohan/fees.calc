@@ -1,44 +1,85 @@
-/* Desktop background */
+/* Default styles for all screens */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
-    margin: 50px;
-    background: url('https://aub.ac.bd/static/assets/images/aub-outlook-thumbnail.jpg') no-repeat center center fixed;
+    margin: 0;
+    padding: 0;
+    background: url('desktop-background.jpg') no-repeat center center fixed;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+label {
+    color: white;
+    font-size: 18px;
+}
+
+input {
+    padding: 12px;
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+button {
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+}
+
+p {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+span {
+    font-weight: bold;
+    color: yellow;
 }
 
 /* Mobile background (for screens smaller than 768px) */
 @media only screen and (max-width: 768px) {
     body {
-        background: url('https://github.com/rayhanuddinrohan/tuition_fees_calculator/blob/main/mobile-bg.jpg') no-repeat center center fixed;
+        background: url('mobile-background.jpg') no-repeat center center fixed;
         background-size: cover;
     }
-}
 
-
-.container {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    margin: auto;
-}
-
-input {
-    padding: 10px;
-    width: 80%;
-    margin: 10px 0;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: blue;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: darkblue;
+    .container {
+        padding: 20px;
+        max-width: 350px;
+    }
 }
