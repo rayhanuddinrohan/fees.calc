@@ -1,1 +1,1 @@
-# tuition_fees_calculator
+# calculate your percentage of tuition fees
