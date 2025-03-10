@@ -1,28 +1,17 @@
-/* Desktop background */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 50px;
-    background: url('https://aub.ac.bd/static/assets/images/aub-outlook-thumbnail.jpg') no-repeat center center fixed;
-    background-size: cover;
-}
-
-/* Mobile background (for screens smaller than 768px) */
-@media only screen and (max-width: 768px) {
-    body {
-        background: url('https://github.com/rayhanuddinrohan/tuition_fees_calculator/blob/main/mobile-bg.jpg') no-repeat center center fixed;
-        background-size: cover;
-    }
+    background-color: #f4f4f4;
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.7); /* Adjust opacity (0.1 - 1) */
+    background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     margin: auto;
-    backdrop-filter: blur(5px); /* Adjust blur intensity */
 }
 
 input {
