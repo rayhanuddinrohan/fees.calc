@@ -34,7 +34,7 @@ h1 {
 
 /* Labels */
 label {
-    color: #FFD700; /* Gold color for high contrast */
+    color: #000000; /* Gold color for high contrast #FFD700 */
     font-size: 22px;
     font-weight: bold;
     text-shadow: 2px 2px 4px black;
