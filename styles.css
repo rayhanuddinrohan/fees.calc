@@ -4,86 +4,108 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background: gray;
+    background: #333; /* Dark gray for better contrast */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
+/* Styled container */
 .container {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.3); /* Slightly more visible */
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
     max-width: 400px;
     width: 90%;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
     transition: all 0.3s ease-in-out;
 }
 
+/* Headings */
 h1 {
-    color: yellow;
-    font-size: 28px;
+    color: #FFD700; /* Bright yellow */
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 15px;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 3px 3px 5px black;
 }
 
+/* Labels */
 label {
-    color: yellow;
-    font-size: 20px;
+    color: #FFD700; /* Gold color for high contrast */
+    font-size: 22px;
     font-weight: bold;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 2px 2px 4px black;
 }
 
+/* Input field */
 input {
-    padding: 12px;
+    padding: 14px;
     width: 100%;
-    margin: 10px 0;
+    margin: 12px 0;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 18px;
     text-align: center;
     font-weight: bold;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
 
+/* Buttons */
 button {
-    padding: 12px 25px;
-    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    padding: 14px 28px;
+    background: linear-gradient(45deg, #ff5733, #c70039);
     color: white;
     font-size: 20px;
     font-weight: bold;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: 0.3s;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 2px 2px 4px black;
 }
 
 button:hover {
-    background: linear-gradient(45deg, #ff4b2b, #ff416c);
-    transform: scale(1.05);
+    background: linear-gradient(45deg, #c70039, #ff5733);
+    transform: scale(1.07);
 }
 
+/* Paragraph text */
 p {
-    color: yellow;
-    font-size: 20px;
+    color: #FFD700;
+    font-size: 22px;
     font-weight: bold;
-    margin: 10px 0;
-    text-shadow: 1px 1px 3px black;
+    margin: 12px 0;
+    text-shadow: 2px 2px 4px black;
 }
 
+/* Highlighted text */
 span {
     font-weight: bold;
     color: cyan;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 2px 2px 4px black;
 }
 
-/* Mobile background (for screens smaller than 768px) */
+/* Mobile-friendly design */
 @media only screen and (max-width: 768px) {
     .container {
-        padding: 20px;
-        max-width: 350px;
+        padding: 25px;
+        max-width: 340px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    label, p {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px 24px;
     }
 }
