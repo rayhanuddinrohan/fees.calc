@@ -1,9 +1,18 @@
+/* Desktop background */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 50px;
-    background: url('/university_vertical.jpg') no-repeat center center fixed; /* Add your image */
+    background: url('https://github.com/rayhanuddinrohan/tuition_fees_calculator/blob/main/desktop-bg.jpg') no-repeat center center fixed;
     background-size: cover;
+}
+
+/* Mobile background (for screens smaller than 768px) */
+@media only screen and (max-width: 768px) {
+    body {
+        background: url('https://github.com/rayhanuddinrohan/tuition_fees_calculator/blob/main/mobile-bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
 }
 
 .container {
